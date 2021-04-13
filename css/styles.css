@@ -594,8 +594,10 @@ img {
 }
 .footer-blocks {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  justify-content: space-between;
 }
+
 .contacts-block {
   display: inline-block;
 }
@@ -678,6 +680,33 @@ img {
 .social-links-items .link:focus {
   background-color: var(--focus-color);
 }
+
+.subscribe-form {
+  display: inline-block;
+}
+
+.subscribe {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.email-input {
+  min-width: 360px;
+  height: 50px;
+  margin-right: 10px;
+  padding: 15px 16px;
+  outline: none;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--secondary-background-color);
+}
+
+.subscribe .button::after {
+  background-image: url();
+}
+
 /* styles for portfolio page */
 
 .project-filter {
