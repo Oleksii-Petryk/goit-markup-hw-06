@@ -52,9 +52,52 @@
             <div class="modal">
                 <button data-modal-close class="button-close">
                     <svg class="icon-close" width=18 height=18>
-                        <use href="./images/icons/icons.svg#icon-close-icon"></use>
+                        <use href="./images/icons/icons.svg#icon-close"></use>
                     </svg>
                 </button>
+                <h2 class="backdrop-header">
+                    Оставьте свои данные, мы вам перезвоним
+                </h2>
+                <form class="backdrop-form">
+                    <label class="form-labels" for="clients-name">Имя</label>
+                    <div class="input-box">
+                    <input class="input-block" type="text" name="name" id="clients-name">
+                    <svg class="icons-form" width=18 height=18>
+                        <use href="./images/icons/icons.svg#icon-person"></use>
+                    </svg>
+                    </div>
+                <label class="form-labels" for="clients-tel">Телефон</label>
+                <div class="input-box">
+                    <input class="input-block" type="tel" name="phone" id="clients-tel">
+                    <svg class="icons-form" width=18 height=18>
+                        <use href="./images/icons/icons.svg#icon-phone"></use>
+                    </svg>
+                </div>
+                    <label class="form-labels" for="clients-email">Почта</label>
+                    <div class="input-box">
+                        <input class="input-block" type="email" name="email" id="clients-email">
+                        <svg class="icons-form" width=18 height=18>
+                            <use href="./images/icons/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                    <label class="form-labels" for="comments">
+                        Комментарий
+                    </label>
+                    <textarea name="comments" id="comments" rows="6" placeholder="Введите текст"></textarea>
+                    <label class="agreement">
+                        <div class="checkbox">
+                            <svg class="icon-check" width=15 height=15>
+                                <use href="./images/icons/icons.svg#icon-check"></use>
+                            </svg>
+                        <input  type="checkbox" name="clients-agreement" value="check" />
+                        Соглашаюсь с рассылкой и принимаю
+                        </div>
+                        <a href="http://" target="_blank" rel="noreferrer noopener" class="link-agreement">
+                            Условия договора
+                        </a>
+                    </label>
+                    <button class="button" type="submit">Отправить</button>
+                </form>
             </div>
         </div>
     </div>
@@ -329,15 +372,16 @@
 <footer class="footer">
     <div class="container footer-blocks">
         <div class="contacts-block">
-        <a class="logo" href="./index.html">Web<span class="footer-logo">Studio</span></a>
-        <address class="address">
-            <ul class="footer-contacts list">
-                <li class="contacts-item"><a href="https://goo.gl/maps/1J1BHxxjEEeEj4qXA" class="link-map"
-                        target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a></li>
-                <li class="contacts-item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-                <li class="contacts-item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+            <a class="logo" href="./index.html">Web<span class="footer-logo">Studio</span></a>
+            <address class="address">
+                <ul class="footer-contacts list">
+                    <li class="contacts-item"><a href="https://goo.gl/maps/1J1BHxxjEEeEj4qXA" class="link-map"
+                            target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li class="contacts-item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                    </li>
+                    <li class="contacts-item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                </ul>
+            </address>
         </div>
         <div class="social-links-footer">
             <h2 class="social-links-header">присоединяйтесь</h2>
@@ -371,6 +415,18 @@
                     </a>
                 </li>
             </ul>
+        </div>
+        <div class="subscribe-form">
+            <h2 class="social-links-header">Подпишитесь на рассылку</h2>
+            <form class="subscribe">
+                <input class="email-input" type="email" name="email" placeholder="E-mail" />
+                <button class="button" type="submit">
+                    Подписаться
+                    <svg class="icon-send" width=24 height=24>
+                        <use href="./images/icons/icons.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+            </form>
         </div>
     </div>
 </footer>
