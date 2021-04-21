@@ -458,7 +458,7 @@ textarea:focus {
 .checkbox:checked + .icon-check {
   cursor: pointer;
   background-color: var(--focus-color);
-  background-image: url(/images/icons/icon\ checked.svg);
+  background-image: url('/images/icons/icon-checked.svg');
   background-size: contain;
   background-origin: border-box;
   fill: var(--focus-color);
