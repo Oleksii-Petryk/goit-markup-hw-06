@@ -309,9 +309,7 @@ img {
   min-height: 581px;
   max-width: 528px;
   border-radius: 4px;
-  padding-top: 40px;
-  padding-left: 35px;
-  padding-right: 45px;
+  padding: 40px;
 
   background-color: var(--secondary-header-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -378,6 +376,7 @@ img {
 .input-block {
   display: inline-block;
   width: 100%;
+  height: 100%;
   padding: 12px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -399,6 +398,7 @@ img {
 
 textarea {
   width: 100%;
+  height: 120px;
   resize: none;
   padding: 12px 16px;
 
@@ -458,7 +458,7 @@ textarea:focus {
 .checkbox:checked + .icon-check {
   cursor: pointer;
   background-color: var(--focus-color);
-  background-image: url('/images/icons/icon-checked.svg');
+  background-image: url(/images/icons/icon-checked.svg);
   background-size: contain;
   background-origin: border-box;
   fill: var(--focus-color);
@@ -794,7 +794,6 @@ textarea:focus {
 
 .social-links-footer {
   display: inline-block;
-  margin-left: 70px;
 }
 
 .social-links-footer .social-links {
@@ -841,12 +840,20 @@ textarea:focus {
   height: 50px;
   margin-right: 10px;
   padding: 15px 16px;
-  outline: none;
+  outline: thin;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--secondary-background-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
+
 .subscribe .button {
   display: flex;
   align-items: center;
