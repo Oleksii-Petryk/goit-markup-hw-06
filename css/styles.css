@@ -464,6 +464,10 @@ textarea:focus {
   fill: var(--focus-color);
 }
 
+.checkbox:focus ~ .icon-check {
+  fill: var(--focus-color);
+}
+
 .link-agreement {
   margin-left: 4px;
 }
